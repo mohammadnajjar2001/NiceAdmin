@@ -11,5 +11,8 @@
 @endsection
 
 @section('content')
-<center><h1>This is Home page</h1></center>
+<center>
+    <h1>This is Home page</h1>
+    <h3>Mohammed Nassan Najjar</h3>
+</center>
 @endsection
