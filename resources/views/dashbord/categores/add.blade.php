@@ -22,10 +22,10 @@
             <textarea type="textarea" class="form-control m-2" id="description" placeholder="description" style="height: 200px"></textarea>
         </div>
         <div class="mb-3">
-            <label for="imgprodct" class="form-label">upload photo the prodct</label>
+            <label for="imgprodct" class="form-label">upload photo the prodct : </label>
             <input class="form-control m-2" type="file" id="formFile">
         </div>
-        <label for="statusnow" class="form-label">Status now</label>
+        <label for="statusnow" class="form-label">Status now : </label>
         <div class="form-check m-2">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
