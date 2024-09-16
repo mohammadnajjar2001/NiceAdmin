@@ -42,7 +42,7 @@
             <nav>
                 <ol class="breadcrumb">
                     @section('breadcrumb')
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('dashbord.index')}}">Home</a></li>
                     @show
                 </ol>
             </nav>
