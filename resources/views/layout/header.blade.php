@@ -1,7 +1,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="{{route('dashbord.index')}}" class="logo d-flex align-items-center">
+        <a href="{{route('dashindex')}}" class="logo d-flex align-items-center">
             <img src="{{asset('assets/img/logo.png')}}" alt="">
             <span class="d-none d-lg-block">{{ config('app.name')}}</span>
         </a>
@@ -186,7 +186,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <a class="dropdown-item d-flex align-items-center" href="{{route('profile.edit')}}">
                             <i class="bi bi-person"></i>
                             <span>My Profile</span>
                         </a>
@@ -216,9 +216,14 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
-                            <i class="bi bi-box-arrow-right"></i>
-                            <span>Sign Out</span>
+                        <a class="dropdown-item d-flex align-items-center" href="#" 
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <i class="bi bi-box-arrow-right"></i> Sign Out
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                            
+                            
                         </a>
                     </li>
 
