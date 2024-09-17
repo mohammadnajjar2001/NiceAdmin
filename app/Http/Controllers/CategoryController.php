@@ -9,4 +9,7 @@ class CategoryController extends Controller
     public function index(){
         return view('dashbord.categores.index');
     }
+    public function store(){
+        return view('dashbord.categores.add');
+    }
 }
