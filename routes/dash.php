@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashbordController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard\PepoleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-//Route::get('/d',[HomeController::class,'index'])->name("dashindex")->middleware('auth');
-Route::middleware('auth')->group(function () {
-    Route::get('/dashbord/index', [DashbordController::class, 'index'])->name("dashbord.index");
-    Route::get('/dashbord/category/index', [CategoryController::class, 'index'])->name("dashbord.category.index");
-    Route::get('/dashbord/category/add', [CategoryController::class, 'store'])->name("dashbord.category.add");
-});
+Route::get('/d',[HomeController::class,'index'])->name("dashindex")->middleware('auth');
+Route::get('/dashbord/index',[DashbordController::class,'index'])->name("dashbord.index")->middleware('auth');
+Route::get('/dashbord/category/index',[CategoryController::class,'index'])->name("dashbord.category.index")->middleware('auth');
+Route::get('/dashbord/category/add',[AddCategoryController::class,'store'])->name("dashbord.category.add")->middleware('auth');
+Route::resource('pepole',PepoleController::class)->middleware('auth');

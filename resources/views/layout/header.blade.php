@@ -1,7 +1,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="{{route('dashbord.index')}}" class="logo d-flex align-items-center">
+        <a href="{{route('dashindex')}}" class="logo d-flex align-items-center">
             <img src="{{asset('assets/img/logo.png')}}" alt="">
             <span class="d-none d-lg-block">{{ config('app.name')}}</span>
         </a>
@@ -120,7 +120,7 @@
                             <img src="{{asset('assets/img/messages-1.jpg')}}" alt="" class="rounded-circle">
                             <div>
                                 <h4>MohamadKhalil</h4>
-                                <p>السلام عليكم ورحمه الله وبركاته
+                                <p>السلام عليكم ورحمه الله وبركاته 
                                     كيفك استاذ
                                     استاذ كرمال التمرين الي عطيته مبارح
                                     في داعي ابعت المشروع؟</p>
@@ -216,14 +216,14 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="#"
+                        <a class="dropdown-item d-flex align-items-center" href="#" 
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <i class="bi bi-box-arrow-right"></i> Sign Out
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-
-
+                            
+                            
                         </a>
                     </li>
 

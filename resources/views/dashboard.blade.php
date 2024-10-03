@@ -25,6 +25,7 @@
     <link href="{{asset('assets/vendor/simple-datatables/style.css')}}" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    @stack('styles')
 </head>
 
 <body>
@@ -42,7 +43,7 @@
             <nav>
                 <ol class="breadcrumb">
                     @section('breadcrumb')
-                    <li class="breadcrumb-item"><a href="{{route('dashbord.index')}}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('dashindex')}}">Home</a></li>
                     @show
                 </ol>
             </nav>
@@ -69,7 +70,7 @@
 
     <!-- Template Main JS File -->
     <script src="{{asset('assets/js/main.js')}}"></script>
-@stack('script')
+@stack('scripts')
 </body>
 
 </html>

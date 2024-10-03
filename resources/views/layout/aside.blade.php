@@ -11,6 +11,14 @@
                 <i class="bi bi-menu-button-wide"></i>
                 <span>category</span>
             </a>
+            <a class="nav-link " href="{{route('pepole.create')}}">
+                <i class="bi bi-circle"></i>
+                <span>add pepole</span>
+            </a>
+            <a class="nav-link " href="{{route('pepole.index')}}">
+                <i class="bi bi-journal-text"></i>
+                <span>show pepole</span>
+            </a>
 
         {{-- <li class="nav-heading">Pages</li>
 

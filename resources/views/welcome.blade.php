@@ -114,7 +114,7 @@
             <h1>Welcome to {{ config('app.name') }}</h1>
             @if (Route::has('login'))
                 @auth
-                    <a href="{{route('dashbord.index')}}" class="btn">Go to Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="btn">Go to Dashboard</a>
                 @else
                     <a href="{{ route('login') }}" class="btn">Log In</a>
 
