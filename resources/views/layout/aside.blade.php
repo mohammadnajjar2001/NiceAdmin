@@ -3,27 +3,29 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="{{ route('dashbord.index')}}">
+            <a class="nav-link " href="{{ route('my.dashboard') }}">
                 <i class="bi bi-grid"></i>
                 <span>Dashboard</span>
             </a>
-            <a class="nav-link " href="{{route('dashbord.category.index')}}">
-                <i class="bi bi-menu-button-wide"></i>
-                <span>category</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="{{ route('student.index') }}">
+                <i class="bi bi-grid"></i>
+                <span>Student</span>
             </a>
-            <a class="nav-link " href="{{route('pepole.create')}}">
-                <i class="bi bi-circle"></i>
-                <span>add pepole</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="{{ route('test.index') }}">
+                <i class="bi bi-grid"></i>
+                <span>Test</span>
             </a>
-            <a class="nav-link " href="{{route('pepole.index')}}">
-                <i class="bi bi-journal-text"></i>
-                <span>show pepole</span>
-            </a>
+        </li>
+        <!-- End Dashboard Nav -->
 
-        {{-- <li class="nav-heading">Pages</li>
+        <li class="nav-heading">Pages</li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="users-profile.html">
+            <a class="nav-link collapsed" href="{{ route('profile.edit') }}">
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
@@ -69,7 +71,7 @@
                 <i class="bi bi-file-earmark"></i>
                 <span>Blank</span>
             </a>
-        </li><!-- End Blank Page Nav --> --}}
+        </li><!-- End Blank Page Nav -->
 
     </ul>
 
