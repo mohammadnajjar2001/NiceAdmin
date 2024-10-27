@@ -32,8 +32,8 @@
         Filter
     </button>
 
-    <div id="filterTable">
-        <table class="form-control d-flex justify-content">
+    <div id="filterTable"style="display: none;">
+        <table class="form-control d-flex justify-content" >
             <tr>
                 <td colspan="6">
                     <center>

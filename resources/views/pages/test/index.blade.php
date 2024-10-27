@@ -3,21 +3,30 @@
     create-test
 @endsection
 @section('content')
-    @if (@session('add'))
+
+
+    {{-- @if (@session('add'))
         <div class="alert alert-success">
             {{ session('add') }}
         </div>
     @endif
     @if (session('update'))
-        <div class="alert alert-info">
-            {{ session('update') }}
-        </div>
+    <div class="alert alert-info">
+        {{ session('update') }}
+    </div>
     @endif
     @if (session('delete'))
-        <div class="alert alert-danger">
-            {{ session('delete') }}
-        </div>
-    @endif
+    <div class="alert alert-danger">
+        {{ session('delete') }}
+    </div>
+    @endif --}}
+
+
+    <x-alert type='success'/>
+    <x-alert type='danger'/>
+    <x-alert type='info'/>
+
+
     @if ($tests->isNotEmpty())
     <table class="table datatable">
         <thead>

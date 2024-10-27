@@ -28,10 +28,10 @@ class studentController extends Controller
             $query->where('last_name','LIKE',"%{$last_name}%");
         }
         if($age){
-            $query->where('age','=',$age);
+            $query->where('age',"{$request->age_C}",$age);
         }
         if($birth){
-            $query->where('birth','<=',$birth);
+            $query->where('birth',"{$request->date_C}",$birth);
         }
         if($dep){
             $query->where('dep','LIKE',"%{$dep}%");
@@ -39,7 +39,7 @@ class studentController extends Controller
         if($gender){
             $query->where('gender',$gender);
         }
-        $students =$query->paginate(10);
+        $students =$query->paginate(15);
         return view('pages.student.index',compact('students','first_name','last_name','dep','age','gender','birth'));
     }
     /**

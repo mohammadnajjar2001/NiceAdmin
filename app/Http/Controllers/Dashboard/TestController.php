@@ -51,7 +51,7 @@ class TestController extends Controller
 ]);
 
 
-        return redirect()->route('test.index')->with('add','تم الاضافة');
+        return redirect()->route('test.index')->with('success','تم الاضافة');
     }
 
     /**
@@ -87,7 +87,7 @@ class TestController extends Controller
         $test = Test::find($id);
         $test->update($request->all());
         $test->save();
-        return redirect()->route('test.index')->with('update','تم التعديل');
+        return redirect()->route('test.index')->with('info','تم التعديل');
     }
 
     /**
@@ -97,6 +97,6 @@ class TestController extends Controller
     {
         $test = Test::find($id);
         $test->delete();
-        return redirect()->route('test.index')->with('delete','تم الحذف');
+        return redirect()->route('test.index')->with('danger','تم الحذف');
     }
 }

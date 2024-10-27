@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\PhoneController;
 use App\Http\Controllers\Dashboard\StudentController;
 use App\Http\Controllers\Dashboard\TestController;
 use Illuminate\Support\Facades\Route;
@@ -9,3 +10,5 @@ Route::get('/my/dashboard', function () {
 })->name('my.dashboard')->middleware('auth');
 Route::resource('/my/dashboard/student', StudentController::class )->middleware('auth');
 Route::resource('/my/dashboard/test', TestController::class )->middleware('auth');
+Route::get('user', [PhoneController::class, 'index']);
+
