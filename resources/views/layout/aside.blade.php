@@ -20,6 +20,29 @@
                 <span>Test</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>My information</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{ route('phonemy.index') }}">
+                        <i class="bi bi-circle"></i><span>Show information</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('phonemy.create') }}">
+                        <i class="bi bi-circle"></i><span>Edit information</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('work.create') }}">
+                        <i class="bi bi-circle"></i><span>Edit Works</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
         <!-- End Dashboard Nav -->
 
         <li class="nav-heading">Pages</li>
@@ -72,7 +95,6 @@
                 <span>Blank</span>
             </a>
         </li><!-- End Blank Page Nav -->
-
     </ul>
 
 </aside>

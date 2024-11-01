@@ -3,6 +3,9 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use App\Models\Job as ModelsJob;
+use Illuminate\Contracts\Queue\Job;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -45,7 +48,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    public function phone(){
+    public function phone()
+    {
         return $this->hasOne(Phone::class);
     }
+    public function works(){
+        return $this->hasMany(Work::class);
+    }
+    // public function jobs(){
+    //     return $this->hasMany(ModelsJob::class);
+    // }
 }
