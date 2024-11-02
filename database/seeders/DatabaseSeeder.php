@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             TestSeeder::class,
             PhoneSeeder::class,
             WorkSeeder::class,
+            RoleSeeder::class,
         ]);
     }
 }

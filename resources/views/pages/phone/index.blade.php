@@ -1,4 +1,4 @@
-{{ $i=1 }}
+{{ $i = 1 }}
 @extends('layout.app')
 @section('title', 'Show Profile')
 @section('content')
@@ -103,21 +103,21 @@
 @endsection
 
 @push('styles')
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-            .name-style {
-                font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        color: #007bff;
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: rgba(0, 123, 255, 0.1);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        .name-style {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #007bff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         .card {
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);

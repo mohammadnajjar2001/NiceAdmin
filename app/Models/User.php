@@ -55,6 +55,9 @@ class User extends Authenticatable
     public function works(){
         return $this->hasMany(Work::class);
     }
+    public function roles(){
+        return $this->belongsToMany(Role::class,'role_user_pivote');
+    }
     // public function jobs(){
     //     return $this->hasMany(ModelsJob::class);
     // }

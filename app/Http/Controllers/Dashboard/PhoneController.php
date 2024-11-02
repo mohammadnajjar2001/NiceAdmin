@@ -90,7 +90,7 @@ class PhoneController extends Controller
                 $data['image'] = $imageName; // إضافة اسم الصورة إلى البيانات
             }
 
-            $user->phone()->update($data);
+            $user->phone->update($data);
         } else {
             // إذا لم يكن لديه رقم هاتف، قم بإضافة رقم جديد
             $data = [
@@ -107,7 +107,7 @@ class PhoneController extends Controller
                 $data['image'] = $imageName; // إضافة اسم الصورة إلى البيانات
             }
 
-            $user->phone()->create($data);
+            $user->phone->create($data);
         }
 
         return redirect()->back()->with('success', 'تم حفظ رقم الهاتف بنجاح.');

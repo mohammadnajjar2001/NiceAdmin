@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\Test;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB ;
 
@@ -57,9 +58,10 @@ class TestController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
-        //
+        $user =User::find(2);
+        return $user->roles;
     }
 
     /**
