@@ -32,6 +32,24 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
 ======================================================== -->
+<style>
+    h2{
+    color: red;
+    }
+.nav-item {
+    color: inherit; /* إزالة أي تأثير خارجي */
+}
+
+.nav-item .nav-link {
+    color: inherit; /* إزالة أي تأثير خارجي */
+    text-decoration: none; /* إزالة أي تأثير للتأكيد */
+}
+
+.nav-item .nav-link.active {
+    color: inherit; /* إذا كان العنصر نشطًا لا يتم تغيير اللون */
+}
+
+</style>
     @stack('styles')
 </head>
 
